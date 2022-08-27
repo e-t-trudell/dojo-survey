@@ -1,0 +1,20 @@
+*{
+    border-style: border-box;
+    padding: 10px;
+    margin:10px;
+    
+}
+h2{
+    color: purple;
+    text-align: center;
+}
+form{
+    border: 3px solid chartreuse;
+    color: green;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}

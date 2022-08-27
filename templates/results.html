@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveryResults</title>
+</head>
+<body>
+    <table style="display: flex; flex-direction: column; border: 2px solid orange; width: 600px; height: 400px; justify-content: space-between;">
+        <h2 style="text-decoration: underline;">Submitted Info</h2>
+        <tr>
+            <td>Name:</td>
+            <td>{{session['play_one_name']}}</td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>{{session['locations']}}</td>
+        </tr>
+        <tr>
+            <td>Favorite Language:</td>
+            <td>{{session['languages']}}</td>
+        </tr>
+        <tr>
+            <td>Comment:</td>
+            <td>{{session['comments']}}</td>
+        </tr>
+    </table>
+    <button style="border: 3px solid blue; box-shadow: 4px 4px black" action="/restart">Go Back</button>
+</body>
+</html>
